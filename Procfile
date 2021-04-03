@@ -1,3 +1,2 @@
-stable: python3 -m AllMightRobot
+AllMightRobot: python3 -m AllMightRobot
 ps:scale AllMightRobot=1
-
