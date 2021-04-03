@@ -1,3 +1,3 @@
 stable: python3 -m AllMightRobot
-ps:scale DAISYX=1
+ps:scale AllMightRobot=1
 
