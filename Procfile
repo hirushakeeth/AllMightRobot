@@ -1,2 +1,3 @@
-stable:python3 -m AllMightRobot
+stable: python3 -m AllMightRobot
+ps:scale DAISYX=1
 
