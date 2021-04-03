@@ -1,2 +1,2 @@
-DAISYX: python3 -AllMightRobot
-ps:scale AllMightRobot=1
+AllMightRobot: python3 -AllMightRobot
+
