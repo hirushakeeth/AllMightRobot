@@ -1,2 +1,2 @@
-stable:python3 -AllMightRobot
+stable:python3 -m AllMightRobot
 
