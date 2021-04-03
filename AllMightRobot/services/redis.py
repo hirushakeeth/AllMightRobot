@@ -1,8 +1,6 @@
-# Copyright (C) 2018 - 2020 MrYacha. All rights reserved. Source code available under the AGPL.
-# Copyright (C) 2019 Aiogram
-#
-# This file is part of AllMightBot.
-#
+
+# This file is part of DaisyXBot (Telegram Bot)
+
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
 # published by the Free Software Foundation, either version 3 of the
@@ -16,24 +14,25 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import redis as redis_lib
 import sys
+
+import redis as redis_lib
 
 from AllMightRobot import log
 from AllMightRobot.config import get_str_key, get_int_key
 
 # Init Redis
-redis = redis_lib.StrictRedis(
+redis = redis_lib.Redis(
     host=get_str_key("REDIS_URI"),
     port=get_str_key("REDIS_PORT"),
-    db=get_int_key("REDIS_DB_FSM"),
+    password=get_str_key("REDIS_PASS"),
     decode_responses=True
 )
 
-bredis = redis_lib.StrictRedis(
+bredis = redis_lib.Redis(
     host=get_str_key("REDIS_URI"),
     port=get_str_key("REDIS_PORT"),
-    db=get_int_key("REDIS_DB_FSM")
+    password=get_str_key("REDIS_PASS"),
 )
 
 try:
